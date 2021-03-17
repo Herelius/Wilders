@@ -10,21 +10,31 @@
 
     <title>Rock Paper Scissors</title>
   </head>
-  <body>
-    <div>
+  <body id="body_contact">
       <header>
         <ul id="nav">
-          <li><a href="index.html">Home</a></li>
+          <li><a href="home.html">Home</a></li>
           <li><a href="info.html">Informations</a></li>
           <li><a href="rank.html">Ranking</a></li>
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
-        <section id="actualise">
-          <button style="text-align: right;">
-            <a href="index.html">Actualiser</a>
-          </button>
-        </section>
       </header>
+      <div >
+        <img src="images/standard.gif" alt="banniere" id="banniere">
+      </div>
+      <div id="contact">
+        <form action="">
+          <label for="fname">First name</label><br>
+          <input type="text" id="fname" name="fname"><br>
+          <label for="lname">Last name</label><br>
+          <input type="text" id="lname" name="mail"><br>
+          <label for="mail">Mail</label><br>
+          <input type="text" id="mail" name="lname"><br>
+          <label for="comments">Feedback ?</label><br>
+          <textarea name="message" style=";">Help us improve the game !</textarea>
+          <input class="submit" type="submit" value="Submit">
+        </form> 
+      </div>
 
       <footer>
         <div style="text-align: center;">
@@ -33,6 +43,5 @@
           </p>
         </div>
       </footer>
-    </div>
   </body>
 </html>
