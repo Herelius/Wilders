@@ -2,6 +2,10 @@ html {
   font-style: Sans-serif;
 }
 
+body {
+  margin: 0;
+}
+
 #actualise {
   display: flex;
   justify-content: space-around;
@@ -75,3 +79,84 @@ li.dropdown {
 
 .dropdown:hover .dropdown-content {
   display: block;
+}
+
+#playerNames {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+}
+
+#playerNames button{
+  text-decoration: none;
+  background-color: #DE8585; /* Green */
+  border: none;
+  margin: 0;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 0px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+#playerNames button a {
+  color: white;
+  text-decoration: none;
+}
+
+#welcome {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#rules {
+  margin-top: 50px;
+  text-align: center;
+}
+
+#contact {
+  text-align: center;
+}
+
+form {
+  margin: 0 auto;
+  width: 300px;
+  padding-top: 20px;
+}
+
+label {
+  line-height: 2;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 15px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+input[type="submit"] {
+  
+  background: #DE8585;
+  color: white;
+  border: none;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+}
+
+input[type="submit"]:hover {
+  background-color: rgb(153, 204, 76);
+}
+
+.perso {
+  width: 90%
+}
