@@ -1,42 +1,51 @@
-var user = "";
-var computer = "";
-var nb;
-var won = 0,
-  lost = 0;
+const playerNamesList = document.querySelector('#playerNames');
+const playerNameButton = document.querySelector("#playerName");
 
-function compute() {
-  nb = Math.floor(Math.random() * 3) + 1;
-  if (nb == 1) computer = "Rock";
-  else if (nb == 2) computer = "Paper";
-  else if (nb == 3) computer = "Scissors";
-}
-//=================================== Get user input. ======================================
-function res(form, val) {
-  if (user != "") return;
-  form.texte.value = val;
-  user = val;
-}
-//================================= Test for validity. =====================================
-function testing(form) {
-  if (user == "" || computer == "") return;
-  if (user == computer) {
-    alert("You win !");
-    won += 1;
-    calcScore(form);
-  } else {
-    alert("You loose !\nComputer chose " + computer + ".");
-    lost += 1;
-    calcScore(form);
+
+playerNameButton.addEventListener('click', event => {
+  //event.preventDefault();
+  
+  const name = prompt("Name :");
+  playerNameButton.innerHTML= name;
+});
+
+const rockButton = document.querySelector(".rockChoice");
+const paperButton = document.querySelector(".paperChoice");
+const scissorsButton = document.querySelector(".scissorsChoice");
+let playerChoiceValue;
+
+rockButton.addEventListener('click', event => {
+  event.preventDefault();
+
+  const rockImage = document.querySelector(".playerImageChoice");
+  rockImage.src = "./src/vide.png";
+  rockImage.alt = "Player choice: Rock";
+  playerChoiceValue = 1;
+});
+
+paperButton.addEventListener('click', event => {
+  event.preventDefault();
+
+  const paperImage = document.querySelector(".playerImageChoice");
+  paperImage.src = "./src/paper.png";
+  paperImage.alt = "Player choice: Paper";
+  playerChoiceValue = 2;
+});
+
+scissorsButton.addEventListener('click', event => {
+  event.preventDefault();
+
+  const scissorsImage = document.querySelector(".playerImageChoice");
+  scissorsImage.src = "./src/ciseaux.png";
+  scissorsImage.alt = "Player choice: Scissors";
+  playerChoiceValue = 3;
+
+  const cpuImage = document.querySelector(".cpuImageChoice");
+  let cpuChoiceValue = Math.floor(Math.random() * 3) + 1;
+
+  if (cpuChoiceValue === 1) {
+    cpuImage.src = "./src/Pierre";
   }
-}
-//=================================== Sum up score. ========================================
-function calcScore(form) {
-  document.getElementById("score").innerHTML =
-    "Won: " + won + " times. Lost: " + lost + " times.";
-}
-//====================================== Reset. ============================================
-function raz(form) {
-  form.texte.value = "";
-  user = "";
-  computer = "";
-}
+});
+
+
