@@ -5,9 +5,7 @@
     <link rel="stylesheet" type="text/css" href="style.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script defer src="script.js"></script>
-    <style></style>
-
+    <script defer src="scriptContact.js"></script>
     <title>Rock Paper Scissors</title>
   </head>
   <body>
@@ -20,11 +18,25 @@
           <li><a href="contact.html">Contact Us</a></li>
         </ul>
         <section id="actualise">
-          <button style="text-align: right;">
-            <a href="index.html">Actualiser</a>
-          </button>
+          <button>Actualiser</button>
         </section>
       </header>
+
+      <section id="contact">
+        <p>
+          Fill in the form below to contact us
+        </p>
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" /><br />
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" /><br />
+          <label for="message">Message</label>
+          <textarea id="message" name="message"></textarea>
+          <br /><br />
+          <input type="submit" value="Submit" />
+        </form>
+      </section>
 
       <footer>
         <div style="text-align: center;">
@@ -34,5 +46,6 @@
         </div>
       </footer>
     </div>
+
   </body>
 </html>

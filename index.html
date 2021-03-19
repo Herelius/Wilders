@@ -6,92 +6,14 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <script defer src="script.js"></script>
     <link rel="stylesheet" href="style.css" />
-
     <title>Rock Paper Scissors</title>
   </head>
   <body>
-    <div>
-      <header>
-        <ul id="nav">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="info.html">Informations</a></li>
-          <li><a href="rank.html">Ranking</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </header>
-
-      <noscript
-        >Désolé, le jeu a besoin de JavaScript pour fonctionner!</noscript
-      >
-
-      <form>
-        <div>
-          <br />
-          <table>
-            <tbody>
-              <tr>
-                <td colspan="3">
-                  <input
-                    name="texte"
-                    size="15"
-                    style="text-align: center;"
-                    type="text"
-                    readonly
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td>
-                  <input
-                    value=" Rock "
-                    onclick="res(this.form,'Rock')"
-                    type="button"
-                  />
-                </td>
-                <td>
-                  <input
-                    value=" Paper "
-                    onclick="res(this.form,'Paper')"
-                    type="button"
-                  />
-                </td>
-                <td>
-                  <input
-                    value=" Scissors "
-                    onclick="res(this.form,'Scissors')"
-                    type="button"
-                  />
-                </td>
-              </tr>
-              <tr>
-                <td colspan="3">
-                  <input
-                    value=" Result... "
-                    onclick="compute(); testing(this.form); raz(this.form)"
-                    type="button"
-                  />
-                </td>
-              </tr>
-            </tbody>
-          </table>
-          <br />
-          <div id="score" style="font-weight: bold; text-align: center;">
-            Won: 0 fois. Lost: 0 fois.
-          </div>
-        </div>
-      </form>
-
-      <br />
-      <footer>
-        <div style="text-align: center;">
-          <p>
-            Copyright &copy; 2021, Wilders.
-          </p>
-        </div>
-      </footer>
-    </div>
-    <section id="actualise">
-      <button>Actualiser</button>
+    <include src="header.html"></include>
+    <include src="form.html"></include>
+    <section id="playerBtn">
+      <button><a href="play.html">Play</a></button>
     </section>
+    <include src="footer.html"></include>
   </body>
 </html>
