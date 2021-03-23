@@ -1,15 +1,7 @@
 const playerNamesList = document.querySelector('#playerNames');
 const playerNameButton = document.querySelector("#playerName");
 const cpuImage = document.querySelector(".cpuImageChoice");
-const playButton = document.querySelector('#play');
 const nameInput = document.querySelector('#pname');
-
-playButton.addEventListener('click', event => {
-  //event.preventDefault();
-  let name = prompt("Player Name: ");
-  console.log(name);
-  playerNameButton.innerHTML = `${name}`;
-});
 
 const rockButton = document.querySelector(".rockChoice");
 const paperButton = document.querySelector(".paperChoice");
