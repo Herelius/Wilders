@@ -26,8 +26,6 @@ rockButton.addEventListener('click', event => {
   };
 });
 
-
-
 paperButton.addEventListener('click', event => {
   event.preventDefault();
 
@@ -45,7 +43,6 @@ paperButton.addEventListener('click', event => {
   };
 
 });
-
 
 scissorsButton.addEventListener('click', event => {
   event.preventDefault();
