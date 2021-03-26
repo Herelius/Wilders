@@ -17,7 +17,7 @@ footer {
   justify-content: space-around;
   padding: 16px;
 }
-#actualise button{
+#actualise button {
   text-decoration: none;
   background-color: llinear-gradient(#e66465, #e66465); /* #DE8585; Green */
   border: none;
@@ -29,7 +29,7 @@ footer {
   border-radius: 5px;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
-#actualise button:hover{
+#actualise button:hover {
   background-color: rgb(153, 204, 76);
 }
 
@@ -38,7 +38,9 @@ footer {
   cursor: pointer;
 }
 
-.bar1, .bar2, .bar3 {
+.bar1,
+.bar2,
+.bar3 {
   width: 35px;
   height: 5px;
   background-color: #333;
@@ -51,13 +53,14 @@ footer {
   transform: rotate(-45deg) translate(-9px, 6px);
 }
 
-.change .bar2 {opacity: 0;}
+.change .bar2 {
+  opacity: 0;
+}
 
 .change .bar3 {
   -webkit-transform: rotate(45deg) translate(-8px, -8px);
   transform: rotate(45deg) translate(-8px, -8px);
 }
-
 
 header {
   box-sizing: border-box;
@@ -66,7 +69,7 @@ header {
 }
 .navbar {
   font-size: 18px;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);
+  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf 100%);
   border: 1px solid rgba(0, 0, 0, 0.2);
   padding-bottom: 10px;
 }
@@ -92,8 +95,8 @@ header {
   position: absolute;
   top: 10px;
   right: 20px;
-  cursor: pointer; 
-  color: rgba(255,255,255,0.8);
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.8);
   font-size: 24px;
 }
 .main-nav {
@@ -106,39 +109,39 @@ header {
 
 @media screen and (min-width: 768px) {
   .navbar {
-      display: flex;
-      justify-content: space-between;
-      padding-bottom: 0;
-      height: 70px;
-      align-items: center;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 0;
+    height: 70px;
+    align-items: center;
   }
 
   .main-nav {
-      display: flex;
-      margin-right: 30px;
-      flex-direction: row;
-      justify-content: flex-end;
+    display: flex;
+    margin-right: 30px;
+    flex-direction: row;
+    justify-content: flex-end;
   }
 
   .main-nav li {
-      margin: 0;
+    margin: 0;
   }
 
   .nav-links {
-      margin-left: 40px;
+    margin-left: 40px;
   }
 
   .logo {
-      margin-top: 0;
+    margin-top: 0;
   }
 
   .navbar-toggle {
-      display: none;
+    display: none;
   }
 
   .logo:hover,
   .nav-links:hover {
-      color: rgba(255, 255, 255, 1);
+    color: rgba(255, 255, 255, 1);
   }
 }
 
@@ -147,7 +150,7 @@ header {
   position: absolute;
   background-color: #f9f9f9;
   min-width: 160px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
   z-index: 1;
 }
 
@@ -159,7 +162,9 @@ header {
   text-align: left;
 }
 
-.dropdown-content a:hover {background-color: #f1f1f1;}
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+}
 
 .dropdown:hover .dropdown-content {
   display: block;
@@ -171,10 +176,14 @@ header {
   padding: 16px;
 }
 
-#playerNames button{
+#playerNames button {
   text-decoration: none;
   width: 40%;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);/*#DE8585;  rose */
+  background-image: linear-gradient(
+    260deg,
+    #2376ae 0%,
+    #c16ecf 100%
+  ); /*#DE8585;  rose */
   border: none;
   margin: 0;
   color: white;
@@ -194,8 +203,12 @@ button a {
   display: flex;
   justify-content: space-between;
 }
-#imageChoice img{
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%);/* #DE8585; rose */
+#imageChoice img {
+  background-image: linear-gradient(
+    260deg,
+    #2376ae 0%,
+    #c16ecf 100%
+  ); /* #DE8585; rose */
   border: none;
   width: 45%;
   margin: 0;
@@ -215,11 +228,15 @@ button a {
   display: flex;
   justify-content: space-around;
   padding: 30px;
-  background-image: linear-gradient(260deg, #2376ae 0%, #c16ecf   100%); /* #DE8585;*/
+  background-image: linear-gradient(
+    260deg,
+    #2376ae 0%,
+    #c16ecf 100%
+  ); /* #DE8585;*/
 }
-#threeChoice button{
+#threeChoice button {
   text-decoration: none;
-  background-color: rgba(255,255,255,0.8);/* #DE8585; /* Green */
+  background-color: rgba(255, 255, 255, 0.8); /* #DE8585; /* Green */
   background-image: linear-gradient(#e66465, #e66465);
   border: none;
   margin: 0;
@@ -244,6 +261,7 @@ button a {
 
 #banniere {
   width: 100%;
+  height: 120px;
 }
 #contact {
   text-align: center;
@@ -259,8 +277,8 @@ label {
   line-height: 2;
 }
 
-input[type="text"],
-input[type="email"],
+input[type='text'],
+input[type='email'],
 textarea {
   width: 100%;
   padding: 15px;
@@ -268,7 +286,7 @@ textarea {
   border-radius: 5px;
 }
 
-input[type="submit"] {
+input[type='submit'] {
   background-image: linear-gradient(#e66465, #e66465);
   /*background-color: #DE8585;*/
   color: white;
@@ -282,13 +300,13 @@ input[type="submit"] {
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
 }
 
-input[type="submit"]:hover {
+input[type='submit']:hover {
   /*background-color: rgb(153, 204, 76);*/
   background-image: linear-gradient(#e66465, #9198e5);
 }
 
 .perso {
-  width: 90%
+  width: 90%;
 }
 #welcome {
   margin-top: 50px;
@@ -354,4 +372,3 @@ input[type="submit"]:hover {
   background-image: linear-gradient(rgb(29, 226, 95), #9198e5);
   /*background-color: rgb(153, 204, 76);*/
 }
-
