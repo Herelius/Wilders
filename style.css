@@ -326,7 +326,7 @@ input[type='submit']:hover {
 /*page acuueil*/
 
 #welcome_video {
-  background-color: rgba(255, 255, 0, 0.336);
+  background-color: rgba(171, 9, 207, 0.53);
   display: flex;
   justify-content: space-around;
   align-items: center;
